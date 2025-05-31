@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Home>
+@{
+    Layout = null;
+}
+
+<style>
+    @@media (min-width: 800.1px) {
+        .banner img {
+            height: 90vh; /* Ekran yüksekliğinin %50'si */
+        }
+    }
+</style>
+@foreach (var item in Model)
+{
+    <div class="banner">
+        <img class="w-100" src="/home/@item.HomeImage"/>
+        <h2 class="p-3 font-weight-bold"> @item.HomeWelCome </h2>
+    </div>
+
+    <div class="icerik">
+
+        <div class="d-flex mb-3">
+            <a href="tel:@item.HomePhone" target="_blank" class="btn btn-danger but mx-auto p-3 font-weight-bold">REZERVASYON İÇİN ARA</a>
+        </div>
+
+        <h2>@item.HomeTitle</h2>
+        <p>
+            @item.HomeDescriptions
+        </p>
+    </div>
+}
+

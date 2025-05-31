@@ -1,0 +1,33 @@
+﻿@model Contact
+
+@{
+    ViewData["Title"] = "İletişim Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>İletişim Bilgilerini Güncelle</h1>
+
+
+<form asp-action="UpdateContact" asp-controller="AdminContact" method="post">
+    <input type="hidden" asp-for="ContactID" />
+    <div class="form-group">
+        @Html.Label("Adres")
+        <input type="text" asp-for="Adres" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Telefon Numarası")
+        <input type="text" asp-for="Phone" placeholder="90 *** *** ** **" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("E-Mail Adresi")
+        <input type="text" asp-for="Mail" class="form-control" />
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <button class="btn btn-outline-warning" onclick="alert('İletişim Bilgileri Güncellendi');">Güncelle</button>
+</form>

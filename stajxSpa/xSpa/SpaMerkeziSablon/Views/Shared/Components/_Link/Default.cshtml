@@ -1,0 +1,16 @@
+﻿
+@model List<Link>
+
+<div class="p-4 mx-3 mb-3" style="text-align: center; color: white; background-color:black;">
+    <h5 class="mb-0">DİĞER İŞLETMELERİMİZ</h5>
+</div>
+
+<div class="row px-2 mx-auto">
+    @foreach (var item in Model)
+    {
+        <div class="px-2 col-md-6 mb-3">
+            <a href="https://@item.LinlUrl" target="_blank" class="btn btn-danger w-100 py-4 but font-weight-bold">@item.LinlName</a>
+        </div>
+    }
+</div>
+

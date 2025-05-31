@@ -1,0 +1,59 @@
+﻿
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+    footer h5 {
+        color: #e8cf8a; /* Bootstrap'in warning rengini kullanarak */
+    }
+
+    footer p, footer a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Küçük Cihazlar (telefonlar, 768px ve altı) */
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Orta Cihazlar (tabletler, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        text-align: center;
+    }
+
+        footer h5 {
+            font-size: 18px;
+        }
+}
+
+/* Büyük Cihazlar (desktop, 992px ve üstü) */
+@media (min-width: 992px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+        footer .col-md-1, footer .col-md-6, footer .col-md-5 {
+            margin-bottom: 0;
+        }
+
+        footer .nav-item {
+            margin-bottom: 0.5rem;
+        }
+}

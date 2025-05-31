@@ -1,0 +1,10 @@
+// migration olusturma 
+dotnet ef migrations add IlkOlusturma --project ../DataAccesLayer --startup-project .
+
+
+// update database
+dotnet ef database update --project ../DataAccesLayer --startup-project .
+
+
+// projeyi çalıstırma
+datnet watch

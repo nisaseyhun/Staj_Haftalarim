@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+
+    
+
+}
+
+<!DOCTYPE html>
+
+<html>
+@await Html.PartialAsync("/Views/LayoutPartial/_Header.cshtml")
+
+<body class="index-body">
+
+    @await Component.InvokeAsync("_Navbar")
+
+
+    @RenderBody()
+
+    @* Whatsap ikonu ve telefon ikonu *@
+    @*<a href="https://wa.me/905355813561?text=Merhaba,%20Sizlere%20sitesinden%20ulasıyorum;%20" target="_blank" class="whatsapp">
+            <img src="/icon/whatsapp.ico" alt="Whatsapp" class="icon" />
+        </a>
+        <a href="tel:905355813561" target="_blank" class="phone">
+            <img src="/icon/phone1.ico" alt="Phone" class="icon" />
+        </a>*@
+
+    @await Component.InvokeAsync("_Footer")
+</body>
+</html>

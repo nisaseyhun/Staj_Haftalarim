@@ -1,0 +1,45 @@
+﻿
+@model List<Blog>
+
+<style>
+    .but {
+        background: linear-gradient(to right, #f5e8b1 0%, #c79937 100%);
+        color: black;
+        border-radius: 15px;
+        transition: background 0.3s ease;
+        width: 230px;
+        font-weight: bold;
+        border: 1px;
+    }
+
+        .but:hover {
+            background: linear-gradient(to right, #c79937 100%, #f5e8b1 0%);
+            color: white;
+            font-weight: bold;
+        }
+</style>
+
+<div class="p-4 mx-3 mb-3" style=" text-align: center; background-color:black; color: white;">
+    <h5 class="mb-0">BLOG YAZILARIMIZ</h5>
+</div>
+
+@* Depolar *@
+<div class="row mx-2 justify-content-between mb-3">
+    @foreach (var item in Model)
+    {
+        <div class="px-2 mb-3 col-lg-3 col-md-3 col-sm-12 p-0">
+            <div class="card" style="background: linear-gradient(to right, #fff8dc 0%, #efcc83 100%); border: 1px solid; padding: 10px; box-shadow: 5px 10px; border: none; ">
+                <div class="card-body p-0" style="height:130px;">
+                    <div style="max-height: 130px; overflow-y: auto;">
+                        <h4 class="card-title font-weight-bold text-center p-3">@item.Title</h4>
+                    </div>
+                </div>
+                <a href="/Blog/Post/@item.Id">
+                    <img class="card-img-top" style="height: 200px;" src="/blogImage/@item.ImagePath" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    }
+</div>
+
+<a href="/Blog/Index" class="btn btn-danger p-3 mb-3 mx-auto d-block but">Tüm Bloğa Git</a>

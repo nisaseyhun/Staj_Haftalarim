@@ -1,0 +1,39 @@
+﻿@model SpaMerkeziSablon.Models.UserSignIn
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Admin SignIn</title>
+</head>
+<body>
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="/site/login.png" id="icon" alt="User Icon" />
+            </div>
+
+            <form method="post">
+                <input type="text" id="login" class="fadeIn second" asp-for="userName" placeholder="Kullanıcı Adı" required>
+                <span asp-validation-for="userName"></span>
+                <input type="password" id="password" class="fadeIn third" asp-for="userPassword" placeholder="Sifre" required>
+                <span asp-validation-for="userPassword"></span>
+                <input type="submit" class="fadeIn fourth" value="Giriş Yap">
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

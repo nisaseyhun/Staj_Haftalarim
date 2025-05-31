@@ -1,0 +1,45 @@
+﻿@model List<Contact>
+
+@{
+    ViewData["Title"] = "İletişim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>İletişim Bilgileri</h1>
+
+
+@if (Model.Count < 1)
+{
+    <a href="/AdminContact/AddContact/" class="btn btn-success mb-3">Ekle</a>
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Adres</th>
+            <th>Telefon Numarası</th>
+            <th>E-Mail Adresi</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @{ var i = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td style="word-break: break-all;">@item.Adres</td>
+                <td style="word-break: break-all;">@item.Phone</td>
+                <td style="word-break: break-all;">@item.Mail</td>
+                <td>
+                    <form class="" asp-controller="AdminContact" asp-action="DeleteContact" asp-route-id="@item.ContactID" method="post" onsubmit="return confirm('İletişim bilgilerini silmek iştediğinize eminmisiniz!')">
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+                <td><a href="/AdminContact/UpdateContact/@item.ContactID" class="btn btn-outline-warning">Güncelle</a></td>
+            </tr>
+            i++;
+        }
+    </table>
+</div>

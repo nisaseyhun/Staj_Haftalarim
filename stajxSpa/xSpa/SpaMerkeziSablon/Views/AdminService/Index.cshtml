@@ -1,0 +1,51 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model List<Service>
+
+@{
+    ViewData["Title"] = "Hizmetler";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <a class="btn btn-success mb-1" asp-action="AddService" asp-controller="AdminService">Hizmet Ekle</a>
+    <p class="text-center mb-3">Toplam Hizmet Sayısı: @ViewBag.serviceCount</p>
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="card-title text-white">Hizmet Sayfası</h4>
+        </div>
+        <div class="card-body" style="background-color:lightgray;">
+            @foreach (var post in Model)
+            {
+                <div class="rounded mb-4 bg-white p-2">
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center flex-column">
+                            @if (post.ImgUrl == null)
+                            {
+                                <img class="img-fluid" src="~/thumbnails/default_image.png" style="object-fit:cover; height:100%; width:100%">
+
+                            }
+                            else
+                            {
+                                <img class="img-fluid" src="~/uploads/@post.ImgUrl" style="object-fit:cover; height:100%; width:100%">
+                            }
+                        </div>
+                        <div class="col-5 d-flex justify-content-center flex-column">
+                            <h4 style="font-size:1.5rem; font-weight:bolder;" class="text-primary fw-bold">@post.ServiceName</h4>
+                            <p>@post.ServiceDate.ToString("dd MMMM yyyy")</p>
+                        </div>
+                        <div class="col-5 text-right d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a class="btn btn-warning " asp-controller="AdminService" asp-action="UpdateService" asp-route-id="@post.ServiceID" method="post">Düzenle</a> |
+                                <form class="" asp-controller="AdminService" asp-action="DeleteService" asp-route-id="@post.ServiceID" method="post" onsubmit="return confirm('Hizmeti silmek iştediğinize eminmisiniz!')">
+                                    <button type="submit" class="btn btn-danger">Sil</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

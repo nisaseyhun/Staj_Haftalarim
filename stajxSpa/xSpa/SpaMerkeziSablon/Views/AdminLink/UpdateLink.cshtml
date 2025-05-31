@@ -1,0 +1,25 @@
+﻿@model Link
+@{
+    ViewData["Title"] = "UpdateLink";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Link Güncelleme Sayfası</h1>
+
+<form asp-action="UpdateLink" asp-controller="AdminLink" method="post">
+    <input type="hidden" asp-for="LinlID" />
+    <div class="form-group">
+        @Html.Label("Link Üzerindeki Yazı")
+        <input type="text" asp-for="LinlName" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Linkin Adresi")
+        <input type="text" asp-for="LinlUrl" placeholder="https://..." class="form-control" />
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <button class="btn btn-outline-success">Oluştur</button>
+</form>

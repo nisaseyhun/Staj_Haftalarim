@@ -1,0 +1,72 @@
+﻿
+@model IEnumerable<Home>
+
+<style>
+    .logo {
+        height: 60px;
+        width: 98px;
+    }
+
+    .logo-div {
+        height: 92px;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .logo {
+            height: 40px;
+            width: 65px;
+        }
+
+        .logo-div {
+            height: 72px;
+        }
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark py-3 px-4 w-100" style="background-color:black; position: fixed; z-index: 10;">
+    <a href="/Default/Index">
+        <img src="~/wellnessLogo.jpg" class="logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto justify-content-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="/Default/Index/" style="color: #e8cf8a">Ana Sayfa<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="~/About/Index/">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Service/Index/">Hizmetlerimiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Blog/Index/">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Galary/Index/">Galeri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Contact/Index/">İletişim</a>
+            </li>
+        </ul>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a href="~/AdminDashboard/Index" class="btn btn-info mx-md-3">
+            <span class="symbol-input100">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </span>
+            Admin Profilim
+        </a>
+    }
+    @foreach (var item in Model)
+    {
+        <a href="https://www.instagram.com/@item.instagramURl/">
+            <img class="icon" src="/icon/insta.png" alt="instagram" style="height:45px;width:45px;" />
+        </a>
+    }
+</nav>
+<div class="logo-div"></div>

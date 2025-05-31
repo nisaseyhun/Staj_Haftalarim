@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<body class="index-body">
+    <section class="p-0">
+
+        @await Component.InvokeAsync("_WelCome")
+
+        @await Component.InvokeAsync("_Link")
+
+        @await Component.InvokeAsync("_HomeService")
+
+        @await Component.InvokeAsync("_HomeBlog")
+
+        @await Component.InvokeAsync("_Galary")
+
+    </section>
+</body>
+

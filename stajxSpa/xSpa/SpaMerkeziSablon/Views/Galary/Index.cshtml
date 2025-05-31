@@ -1,0 +1,61 @@
+﻿@using EntityLayer.Concrete
+@model List<Galary>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="~/css/Galary.css">
+</head>
+
+<body>
+    <div class="container page-top">
+        @await Component.InvokeAsync("_RezervasyonButton")
+        <div class="row">
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="/galary/@item.GalaryImg" data-fancybox="gallery">
+                            <img src="/galary/@item.GalaryImg" class="zoom img-fluid" alt="">
+                        </a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Fancybox
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    "slideShow",
+                    "thumbs",
+                    "zoom",
+                    "fullScreen",
+                    "share",
+                    "close"
+                ],
+                loop: true,
+                protect: true
+            });
+
+            $(".zoom").hover(function () {
+                $(this).addClass('transition');
+            }, function () {
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>

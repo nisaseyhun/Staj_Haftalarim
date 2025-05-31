@@ -1,0 +1,59 @@
+﻿@using EntityLayer.Concrete
+@model List<Home>
+
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h1>Ana Sayfa</h1>
+
+@if (Model.Count < 1)
+{
+    <a href="/AdminDashboard/AddDashboard/" class="btn btn-success mb-3">Ana Sayfa Ekle</a>
+
+
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Baslık1</th>
+            <th>Açıklama1</th>
+            <th>Karsılama Yazısı</th>
+            <th>Rezarvasyon İçin Tel No</th>
+            <th>İnstagram Adı</th>
+            <th>Banner Linki</th>
+            <th>Resim</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @{ var i = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td style="word-break: break-all;">@item.HomeTitle</td>
+                <td style="word-break: break-all;">@item.HomeDescriptions</td>
+                <td style="word-break: break-all;">@item.HomeWelCome</td>
+                <td style="word-break: break-all;">@item.HomePhone</td>
+                <td style="word-break: break-all;">@item.instagramURl</td>
+                <td style="word-break: break-all;">@item.BannerUrl</td>
+                <td><img style="height:50px;" src="~/home/@item.HomeImage"></td>
+                @if (Model.Count == 1)
+                {
+                }
+                else
+                {
+                    <td><a href="/AdminDashboard/DeleteHome/@item.HomeID" class="btn btn-outline-danger">Sil</a></td>
+
+                }
+                <td><a href="/AdminDashboard/UpdateHome/@item.HomeID" class="btn btn-outline-warning">Güncelle</a></td>
+            </tr>
+            i++;
+        }
+    </table>
+</div>

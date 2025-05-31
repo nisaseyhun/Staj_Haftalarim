@@ -1,0 +1,62 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Admin Bilgileri</h1>
+<a href="/AdminLogin/SignUp/" class="btn btn-success mb-3">Admin Ekle</a>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ad Soyad</th>
+            <th>Kullanıcı Adı</th>
+            <th>E Posta</th>
+            <th>Sil</th>
+        </tr>
+
+        @{ var i = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (Model.Count < 3)
+                {
+                    if (item.UserName == "AdminYonetimPaneli")
+                    {
+                        i--;
+                    }
+                    else
+                    {
+                        <td>@i</td>
+                        <td>@item.name</td>
+                        <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                    }
+                }
+
+                else
+                {
+                    if (item.UserName == "AdminYonetimPaneli")
+                    {
+                        i--;
+                    }
+                    else
+                    {
+                        <td>@i</td>
+                        <td>@item.name</td>
+                        <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                        <td>
+                            <form class="" asp-controller="AdminLogin" asp-action="Delete" asp-route-id="@item.Id" onsubmit="return confirm('Admini silmek iştediğinize Eminmisiniz')">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    }
+                }
+            </tr>
+            i++;
+        }
+    </table>
+</div>

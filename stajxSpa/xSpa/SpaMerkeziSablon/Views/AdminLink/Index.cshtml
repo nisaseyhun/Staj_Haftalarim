@@ -1,0 +1,34 @@
+﻿@model List<Link>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Linkler</h1>
+
+<a href="/AdminLink/CreateLink/" class="btn btn-success mb-3">Link Ekle</a>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tr>
+            <th>Link Adı</th>
+            <th>Link Url</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.LinlName</td>
+                <td>@item.LinlUrl</td>
+                <td><a href="/AdminLink/UpdateLink/@item.LinlID" class="btn btn-warning">Güncelle</a></td>
+                <td>
+                    <form asp-controller="AdminLink" asp-action="DeleteLink" asp-route-id="@item.LinlID" method="post" onsubmit="return confirm('Linki silmek iştediğinize eminmisiniz')">
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

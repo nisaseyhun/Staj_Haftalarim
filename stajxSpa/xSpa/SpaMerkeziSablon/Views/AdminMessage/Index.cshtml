@@ -1,0 +1,39 @@
+﻿@using EntityLayer.Concrete
+@model List<Message>
+
+@{
+    ViewData["Title"] = "Mesajlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Mesajlar</h1>
+<p class="text-center mb-3">Toplam Mesaj Sayısı: @ViewBag.messageCount</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Gönderici Tam Adı</th>
+            <th>E-Posta</th>
+            <th>Mesaj Baslığı</th>
+            <th>Mesaj İçeriği</th>
+            <th>Tarih ve Saat</th>
+            <th>Sil</th>
+        </tr>
+
+        @{ var i = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@item.UserName</td>
+                <td style="word-break: break-all;">@item.Mail</td>
+                <td style="word-break: break-all;">@item.Title</td>
+                <td style="word-break: break-all;">@item.Descriptions</td>
+                <td style="word-break: break-all;">@item.MessageDate</td>
+                <td><a href="/AdminMessage/DeleteMessage/@item.MessageID" class="btn btn-outline-danger">Sil</a></td>
+            </tr>
+            i++;
+        }
+    </table>
+</div>

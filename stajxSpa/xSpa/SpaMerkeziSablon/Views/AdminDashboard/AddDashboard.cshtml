@@ -1,0 +1,57 @@
+﻿@model SpaMerkeziSablon.Models.AddHome
+@{
+    ViewData["Title"] = "Dashboard Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ana Sayfaya Bilgi Ekleme</h1>
+<form method="post" enctype="multipart/form-data" action="AddService">
+    <div class="form-group">
+        @Html.Label("Baslık 1")
+        <input type="text" asp-for="HomeTitle" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Baslık 1 Açıklaması")
+        <input type="text" asp-for="HomeDescriptions" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Karsılama Yazısı")
+        <input type="text" asp-for="HomeWelCome" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Rezarvasyon İçin Tel No")
+        <input type="text" placeholder="90 *** *** ** **" asp-for="HomePhone" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("İnstagram Adı")
+        <input type="text" asp-for="instagramURl" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Banner Linki")
+        <input type="text" asp-for="BannerUrl" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Resim Seçiniz</label>
+        <input type="file" asp-for="HomeImage" />
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <button class="btn btn-outline-warning mt-2 mb-5" onclick="alert('Ana Sayfa Bilgisi oluturuldu');">Olustur</button>
+    <br />
+    <br />
+    <br />
+    <br />
+
+</form>

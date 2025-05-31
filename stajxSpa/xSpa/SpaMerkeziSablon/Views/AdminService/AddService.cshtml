@@ -1,0 +1,67 @@
+﻿@model SpaMerkeziSablon.Models.AddService
+
+@{
+    ViewData["Title"] = "Hizmet Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <a class="btn btn-warning mb-1" asp-action="Index" asp-controller="AdminService">Geri</a>
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="card-title text-white">Hizmet Ekleme Sayfası</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddService" asp-controller="AdminService" enctype="multipart/form-data">
+                <div class="row mb-2">
+                    <div class="col-9">
+                        <div class="mb-2">
+                            <label>Başlık</label>
+                            <input type="text" asp-for="ServiceName" class="form-control" />
+                            <span asp-validation-for="ServiceName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label>Kısa İçerik</label>
+                            <input type="text" asp-for="ServiceDescription" class="form-control" />
+                            <span asp-validation-for="ServiceDescription" class="text-danger"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label>Detaylı İçerik</label>
+                            <textarea id="richEditor" asp-for="ServiceDetails" class="form-control" rows="8"></textarea>
+                            <span asp-validation-for="ServiceDetails" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-2">
+                            <img src="~/blogImage/default_image.png" class="img-fluid" id="thumbnail" />
+                        </div>
+                        <div class="mb-2">
+                            <label>Resim Seçin</label>
+                            <input type="file" asp-for="ImgUrl" class="form-control custom-file-input" />
+                            <span asp-validation-for="ImgUrl" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <button type="submit" class="btn btn-primary w-100">Ekle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+            var file = e.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('thumbnail').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

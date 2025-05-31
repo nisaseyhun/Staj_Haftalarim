@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Home>
+    <style>
+        .but {
+            background: linear-gradient(to right, #f5e8b1 0%, #c79937 100%);
+            color: black;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+            width: 230px;
+            font-weight: bold;
+            border: 1px;
+        }
+
+            .but:hover {
+                background: linear-gradient(to right, #c79937 100%, #f5e8b1 0%);
+                color: white;
+                font-weight: bold;
+            }
+    </style>
+    @foreach (var item in Model)
+    {
+        <div class="d-flex mb-3">
+            <a href="tel:@item.HomePhone" target="_blank" class="btn btn-danger mb-3 mx-auto p-3 but">REZERVASYON İÇİN ARA</a>
+        </div>
+    }

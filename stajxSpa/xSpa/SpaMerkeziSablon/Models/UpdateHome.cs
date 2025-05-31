@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SpaMerkeziSablon.Models
+{
+    public class UpdateHome
+    {
+        public int Id { get; set; }
+        public string HomeTitle { get; set; }
+        public string HomeDescriptions { get; set; }
+        public IFormFile NewImageFile { get; set; }
+        public string HomePhone { get; set; }
+        public string HomeWelCome { get; set; }
+        public string ExistingImagePath { get; set; }
+        public string instagramURl { get; set; }
+        public string BannerUrl { get; set; }
+
+    }
+}

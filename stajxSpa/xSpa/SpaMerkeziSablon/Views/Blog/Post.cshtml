@@ -1,0 +1,50 @@
+﻿
+@model EntityLayer.Concrete.Blog
+
+@{
+    ViewData["Title"] = "Post";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Blog - Wellness Spa</title>
+    <link rel="icon" type="image/x-icon" href="~/blog/assets/favicon.ico" />
+    <link href="~/blog/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('/blogImage/@Model.ImagePath')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-9">
+                        <div class="post-heading">
+                            <h1>@Model.Title</h1>
+                            <h2 class="subheading">@Model.SubTitle</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">@Model.AppUser.UserName</a>
+                                @Model.Created
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        @Html.Raw(Model.Content)
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="~/blog/js/scripts.js"></script>
+    </body>
+</html>

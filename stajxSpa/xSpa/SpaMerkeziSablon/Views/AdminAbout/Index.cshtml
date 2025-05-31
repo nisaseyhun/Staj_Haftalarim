@@ -1,0 +1,60 @@
+﻿@model List<About>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+<style>
+    td {
+        word-break: break-all;
+    }
+</style>
+<h1>Hakkımızda Bilgileri</h1>
+@if (Model.Count < 1)
+{
+    <td><a href="/AdminAbout/CreateAbout" class="btn btn-success mb-3">Ekle</a></td>
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Baslık1</th>
+            <th>Açıklama1</th>
+
+            <th>Baslık2</th>
+            <th>Açıklama2</th>
+
+            <th>Baslık3</th>
+            <th>Açıklama3</th>
+
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @{ var i = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@item.Title1</td>
+                <td>@item.Description1</td>
+                <td>@item.Title2</td>
+                <td>@item.Description2</td>
+                <td>@item.Title3</td>
+                <td>@item.Description3</td>
+                @if (Model.Count == 1)
+                {
+                }
+                else
+                {
+                    <td><a href="/AdminAbout/DeleteAbout/@item.AboutID" class="btn btn-outline-danger">Sil</a></td>
+
+                }
+                <td><a href="/AdminAbout/UpdateAbout/@item.AboutID" class="btn btn-outline-warning">Güncelle</a></td>
+            </tr>
+            i++;
+        }
+    </table>
+</div>

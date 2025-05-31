@@ -1,0 +1,35 @@
+name: Deploy to Hosting Server
+
+on:
+  push:
+    branches:
+      - main   # Ana branch'e push olduðunda tetiklenir.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Ubuntu tabanlý bir iþ ortamý kullanýlacak
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2   # Repository'yi çekiyor
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1  # .NET ortamýný ayarlýyor
+      with:
+        dotnet-version: '5.0'   # Kullanmak istediðiniz .NET sürümünü belirtin
+
+    - name: Restore dependencies
+      run: dotnet restore  # Projenin baðýmlýlýklarýný geri yükler
+
+    - name: Build project
+      run: dotnet build --configuration Release  # Projeyi derler
+
+    - name: Publish project
+      run: dotnet publish --configuration Release --output ./publish  # Projeyi yayýnlar
+
+    - name: Deploy to FTP Server
+      run: |
+        curl -T ./publish/* ftp://ftp.websitem.me/httpdocs/ --user ${{ secrets.FTP_USER }}:${{ secrets.FTP_PASSWORD }} --ftp-create-dirs
+      env:
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}  # FTP þifresini GitHub Secrets'tan alýr
+        FTP_USER: ${{ secrets.FTP_USER }}  # FTP kullanýcý adýný GitHub Secrets'tan alýr

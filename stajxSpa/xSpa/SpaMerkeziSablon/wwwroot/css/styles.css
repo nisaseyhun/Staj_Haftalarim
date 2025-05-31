@@ -1,0 +1,167 @@
+﻿
+/*@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+* {
+    font-family: 'Exo', sans-serif;
+}
+
+
+.index-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8e7e7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}*/
+
+.icerik h2, .icerik h3, .icerik p {
+    text-align: center;
+}
+.kart-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e8e7e7;
+}
+
+.kart {
+    width: 30rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0 8px 16px 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+    .kart:hover {
+        transform: scale(0.9);
+    }
+
+    .kart img {
+        width: 30rem;
+        height: 20rem;
+    }
+
+.kart-section {
+    margin: 15px;
+}
+
+.satir-kart {
+    background-color: #ffffff;
+    height: auto;
+    width: auto;
+    padding:16px 0px;
+    text-align: center;
+    margin-bottom: 70px;
+    border-radius: 20px;
+}
+
+    .icerik {
+        padding: 16px;
+    }
+
+h3 {
+    margin: 0 0 8px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    color: #666;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+    border: 2px solid white;
+}
+
+.icerik h2 {
+    color: #333;
+}
+
+.icerik p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.buton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.galary{
+    padding: 30px 15px 0px 15px;
+}
+
+alert {
+    text-align: center;
+}
+
+a.whatsapp{
+    position:fixed;
+    right:50px;
+    bottom: 50px;
+    width:80px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:#25D366;
+    border-radius: 50%;
+    text-decoration:none;
+    z-index:2;
+}
+
+a.whatsapp:hover{
+    text-decoration:none;
+}
+
+.whatsapp i{
+    color: white;   
+    font-size:30px;
+}
+
+a.phone {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2580d3;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 2;
+}
+
+    a.phone:hover {
+        text-decoration: none;
+    }
+
+.phone i {
+    color: white;
+    font-size: 30px;
+}
+.icon{
+    width:60px;
+}

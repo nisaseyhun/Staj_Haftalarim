@@ -1,0 +1,49 @@
+﻿@model EntityLayer.Concrete.About
+
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Hakkımızda Sayfasını Güncelleme</h1>
+
+
+<form method="post">
+    <input type="hidden" asp-for="AboutID" />
+    <div class="form-group">
+        @Html.Label("Baslık 1")
+        <input type="text" asp-for="Title1" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Baslık 1 Açıklaması")
+        <input type="text" asp-for="Description1" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Baslık 2")
+        <input type="text" asp-for="Title2" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Baslık 2 Açıklaması")
+        <input type="text" asp-for="Description2" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Baslık 3")
+        <input type="text" asp-for="Title3" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Baslık 3 Açıklaması")
+        <input type="text" asp-for="Description3" class="form-control" />
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <button class="btn btn-outline-warning" onclick="alert('Etkinlik Güncellendi');">Güncelle</button>
+</form>

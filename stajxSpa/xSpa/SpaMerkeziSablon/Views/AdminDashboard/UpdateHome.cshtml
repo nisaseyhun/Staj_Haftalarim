@@ -1,0 +1,61 @@
+﻿@model SpaMerkeziSablon.Models.UpdateHome
+
+@{
+    ViewData["Title"] = "DAshboard Güncelleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ana Sayfa Düzenleme</h1>
+
+<form asp-action="UpdateHome" enctype="multipart/form-data">
+    <div class="form-group">
+        @Html.Label("Baslık 1")
+        <input type="text" asp-for="HomeTitle" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Baslık 1 Açıklaması")
+        <input type="text" asp-for="HomeDescriptions" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Baslık 2")
+        <input type="text" asp-for="HomeTitle" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Karsılama Yazısı")
+        <input type="text" asp-for="HomeWelCome" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Rezarvasyon İçin Tel No")
+        <input type="text" asp-for="HomePhone" placeholder="90 *** *** ** **" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("İnstagram Adı")
+        <input type="text" asp-for="instagramURl" class="form-control" />
+    </div>
+    <br />
+    
+    <div class="form-group">
+        @Html.Label("Banner Linki")
+        <input type="text" asp-for="BannerUrl" class="form-control" />
+    </div>
+    <br />
+
+
+    <div class="form-group">
+        <label>Resim Seçiniz</label>
+        <input type="file" asp-for="NewImageFile" />
+    </div>
+    <br />
+    <br />
+
+    <button class="btn btn-outline-warning mb-5" onclick="alert('Ana Sayfa Güncellendi');">Güncelle</button>
+</form>

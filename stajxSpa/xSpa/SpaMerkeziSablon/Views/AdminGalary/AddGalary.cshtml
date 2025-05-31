@@ -1,0 +1,15 @@
+﻿@model SpaMerkeziSablon.Models.AddGalary
+@{
+    ViewData["Title"] = "Galary Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Galeriye Resim Ekleme</h1>
+
+<form method="post" enctype="multipart/form-data" action="AddGalary">
+    <div class="form-group">
+        <label>Resim Seçiniz</label>
+        <input type="file" asp-for="GalaryImg" />
+    </div>
+    <button class="btn btn-outline-warning mt-2 mb-5">Resim Olustur</button>
+</form>

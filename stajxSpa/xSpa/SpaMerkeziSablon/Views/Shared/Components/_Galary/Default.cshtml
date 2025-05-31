@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Galary>
+@{
+    Layout = null;
+    int j = 0;
+}
+
+
+<div class="p-4 mx-3 mt-3" style="background-color: black; text-align: center; color: white;"><h5 class="mb-0">GALERİ</h5></div>
+
+<div class="row galary w-100 justify-content-center m-auto">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img style="height: 300px; border-radius:20px;" src="/galary/@item.GalaryImg"
+                 class="w-100 shadow-1-strong rounded-3 mb-3"
+                 alt="@item.GalaryID" />
+        </div>
+        j++;
+        if (j == 12)
+        {
+            break;
+        }
+    }
+
+</div>
+<a href="/Galary/Index" class="btn btn-danger but p-3 mb-3 px-lg-5 mx-auto d-table">Galeriye Git</a>
+
