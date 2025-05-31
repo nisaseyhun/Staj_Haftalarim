@@ -1,0 +1,15 @@
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\bin\Debug\net9.0\cTemlApp.exe
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\bin\Debug\net9.0\cTemlApp.deps.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\bin\Debug\net9.0\cTemlApp.runtimeconfig.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\bin\Debug\net9.0\cTemlApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\bin\Debug\net9.0\cTemlApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.AssemblyInfoInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.AssemblyInfo.cs
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.csproj.CoreCompileInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.sourcelink.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\refint\cTemlApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\cTemlApp.genruntimeconfig.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\staj4\CKonsolUygulamalari\cTemlApp\obj\Debug\net9.0\ref\cTemlApp.dll

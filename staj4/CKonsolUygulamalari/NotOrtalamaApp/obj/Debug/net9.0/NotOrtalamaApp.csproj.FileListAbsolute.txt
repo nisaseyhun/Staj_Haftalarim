@@ -1,0 +1,15 @@
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\bin\Debug\net9.0\NotOrtalamaApp.exe
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\bin\Debug\net9.0\NotOrtalamaApp.deps.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\bin\Debug\net9.0\NotOrtalamaApp.runtimeconfig.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\bin\Debug\net9.0\NotOrtalamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\bin\Debug\net9.0\NotOrtalamaApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.AssemblyInfoInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.AssemblyInfo.cs
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.csproj.CoreCompileInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.sourcelink.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\refint\NotOrtalamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\NotOrtalamaApp.genruntimeconfig.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\NotOrtalamaApp\obj\Debug\net9.0\ref\NotOrtalamaApp.dll

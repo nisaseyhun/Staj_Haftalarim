@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MenuSistemiApp/1.0.0": {
+        "runtime": {
+          "MenuSistemiApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MenuSistemiApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

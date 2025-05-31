@@ -1,0 +1,15 @@
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\bin\Debug\net9.0\OgrenciIsmleriApp.exe
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\bin\Debug\net9.0\OgrenciIsmleriApp.deps.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\bin\Debug\net9.0\OgrenciIsmleriApp.runtimeconfig.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\bin\Debug\net9.0\OgrenciIsmleriApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\bin\Debug\net9.0\OgrenciIsmleriApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.AssemblyInfoInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.AssemblyInfo.cs
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.csproj.CoreCompileInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.sourcelink.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\refint\OgrenciIsmleriApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\OgrenciIsmleriApp.genruntimeconfig.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\OgrenciIsmleriApp\obj\Debug\net9.0\ref\OgrenciIsmleriApp.dll

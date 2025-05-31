@@ -1,0 +1,15 @@
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\bin\Debug\net9.0\MenuSistemiApp.exe
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\bin\Debug\net9.0\MenuSistemiApp.deps.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\bin\Debug\net9.0\MenuSistemiApp.runtimeconfig.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\bin\Debug\net9.0\MenuSistemiApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\bin\Debug\net9.0\MenuSistemiApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.AssemblyInfoInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.AssemblyInfo.cs
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.csproj.CoreCompileInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.sourcelink.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\refint\MenuSistemiApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\MenuSistemiApp.genruntimeconfig.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj4\MenuSistemiApp\obj\Debug\net9.0\ref\MenuSistemiApp.dll

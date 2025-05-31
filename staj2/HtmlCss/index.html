@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Tasarımlar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        margin: 40px;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      h2 {
+        margin-top: 50px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+      }
+
+      /* 1. Buton */
+      .btn {
+        padding: 10px 25px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* 2. Kart */
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* 3. Form */
+      .form input {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border 0.3s;
+      }
+
+      .form input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      /* 4. Nav */
+      nav {
+        background-color: #222;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        margin-right: 15px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffdd57;
+      }
+
+      /* 5. Profil Kart */
+      .profile-card {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 220px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-card img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        transition: transform 0.3s;
+      }
+
+      .profile-card img:hover {
+        transform: scale(1.1);
+      }
+
+      /* 6. Progress */
+      .progress {
+        background-color: #ddd;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .progress-bar {
+        width: 70%;
+        height: 100%;
+        background-color: #28a745;
+        transition: width 0.5s;
+      }
+
+      /* 7. Modal */
+      .modal {
+        width: 300px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid #aaa;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* 8. Uyarı */
+      .alert {
+        padding: 15px;
+        background-color: #f44336;
+        color: white;
+        border-radius: 5px;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* 9. Tabs */
+      .tabs {
+        display: flex;
+        gap: 10px;
+      }
+
+      .tabs button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        background-color: #eee;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .tabs button:hover {
+        background-color: #ccc;
+      }
+
+      /* 10. Grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+      }
+
+      .grid div {
+        padding: 20px;
+        background-color: #ddd;
+        text-align: center;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+
+      .grid div:hover {
+        background-color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button -->
+    <h2>1. Buton</h2>
+    <button class="btn">Tıklayın</button>
+
+    <!-- Kart -->
+    <h2>2. Kart</h2>
+    <div class="card">
+      <h3>Kart Başlığı</h3>
+      <p>Bu kart hover ile yukarı çıkar.</p>
+    </div>
+
+    <!-- Form -->
+    <h2>3. Form</h2>
+    <form class="form" style="max-width: 300px">
+      <input type="text" placeholder="Adınız" />
+      <input type="email" placeholder="E-posta" />
+      <button class="btn">Gönder</button>
+    </form>
+
+    <!-- Navigation -->
+    <h2>4. Navigasyon</h2>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">Hakkımızda</a>
+      <a href="#">İletişim</a>
+    </nav>
+
+    <!-- Profil Kartları -->
+    <h2>5. Profil Kartı</h2>
+    <div class="profile-card">
+      <img src="image.png" alt="Profil" />
+      <h4>Yavuz Koz</h4>
+      <p>Junior Developer</p>
+    </div>
+
+    <!-- bar -->
+    <h2>6. Progress Bar</h2>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- madal kutusu -->
+    <h2>7. Modal</h2>
+    <div class="modal">
+      <h4>Bilgilendirme</h4>
+      <p>Bu küçük bir modal kutusudur.</p>
+    </div>
+
+    <!-- alert -->
+    <h2>8. Uyarı</h2>
+    <div class="alert">Bir hata oluştu! Lütfen tekrar deneyin.</div>
+
+    <!-- Sekmeler ve Grid Sistemi -->
+    <h2>9. Sekmeler</h2>
+    <div class="tabs">
+      <button>Sekme 1</button>
+      <button>Sekme 2</button>
+      <button>Sekme 3</button>
+    </div>
+
+    <h2>10. Grid Sistemi</h2>
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profil Sayfası</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      .form-container,
+      .table-container,
+      .media-container {
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      img,
+      video,
+      audio {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Profil Sayfası</h1>
+
+    <!-- Form Alanı -->
+    <div class="form-container">
+      <h2>Bilgi Formu</h2>
+      <form>
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">E-Posta:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="gender">Cinsiyet:</label>
+        <select id="gender" name="gender">
+          <option value="male">Erkek</option>
+          <option value="female">Kadın</option>
+          <option value="other">Diğer</option>
+        </select>
+
+        <label for="bio">Hakkınızda:</label>
+        <textarea id="bio" name="bio" rows="4"></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+
+    <!-- Tablo Alanı -->
+    <div class="table-container">
+      <h2>Ders Programı</h2>
+      <table>
+        <tr>
+          <th>Gün</th>
+          <th>Ders</th>
+          <th>Saat</th>
+        </tr>
+        <tr>
+          <td>Pazartesi</td>
+          <td>Web Programlama</td>
+          <td>09:00 - 11:00</td>
+        </tr>
+        <tr>
+          <td>Salı</td>
+          <td>Veritabanı</td>
+          <td>11:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Çarşamba</td>
+          <td>Ağ Temelleri</td>
+          <td>13:00 - 15:00</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Multimedya Alanı -->
+    <div class="media-container">
+      <h2>Multimedya İçerikleri</h2>
+
+      <h3>Profil Fotoğrafı</h3>
+      <img src="image.png" alt="Profil Fotoğrafı" />
+
+      <h3>Tanıtım Videosu</h3>
+      <video controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Tarayıcınız video etiketini desteklemiyor.
+      </video>
+
+      <h3>Tanıtım Müziği</h3>
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Tarayıcınız ses etiketini desteklemiyor.
+      </audio>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaX - Dijital Gelecek</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #0d6efd, #6610f2);
+        color: white;
+        padding: 120px 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 15px;
+      }
+
+      .btn-cta {
+        background-color: white;
+        color: #0d6efd;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .btn-cta:hover {
+        background-color: #0b5ed7;
+        color: white;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+      }
+
+      footer {
+        background-color: #0d6efd;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">Nis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Hizmetler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Staj İlk Projem</h1>
+        <p>Daha Fazlası için githubıma bakabilirsiniz</p>
+        <a href="https://github.com/nisaseyhun/Staj" class="btn btn-cta mt-4"
+          >Githuba Ziyaret Et</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Hakkımızda</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Nis, modern teknolojiyi kullanarak markanızı dijital dünyada en
+              iyi şekilde temsil etmeniz için çalışan yenilikçi bir ajanstır.
+              Size özel yazılım ve tasarım çözümleri sunarız.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="image.png" class="img-fluid rounded" alt="about" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Hizmetlerimiz</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Web Tasarımı</h5>
+                <p class="card-text">
+                  Mobil uyumlu, hızlı ve SEO dostu web siteleri tasarlıyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Yazılım Geliştirme</h5>
+                <p class="card-text">
+                  İşinize özel çözümler sunan modern yazılımlar geliştiriyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Danışmanlık</h5>
+                <p class="card-text">
+                  Teknolojiye dair stratejik danışmanlık ve yönlendirme
+                  hizmetleri veriyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <form onsubmit="showSuccess(event)" class="row g-3">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Adınız"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="E-posta"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Mesajınız"
+              required
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Nis Teknoloji Ajansı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showSuccess(e) {
+        e.preventDefault();
+        alert("Mesajınız başarıyla gönderildi! Teşekkür ederiz.");
+      }
+    </script>
+  </body>
+</html>

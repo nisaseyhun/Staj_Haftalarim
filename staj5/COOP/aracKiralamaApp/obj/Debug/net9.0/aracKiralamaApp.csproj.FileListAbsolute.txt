@@ -1,0 +1,15 @@
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\bin\Debug\net9.0\aracKiralamaApp.exe
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\bin\Debug\net9.0\aracKiralamaApp.deps.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\bin\Debug\net9.0\aracKiralamaApp.runtimeconfig.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\bin\Debug\net9.0\aracKiralamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\bin\Debug\net9.0\aracKiralamaApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.AssemblyInfoInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.AssemblyInfo.cs
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.csproj.CoreCompileInputs.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.sourcelink.json
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\refint\aracKiralamaApp.dll
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.pdb
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\aracKiralamaApp.genruntimeconfig.cache
+C:\Users\Hayrunisa Seyhun\OneDrive\Masaüstü\Staj\Staj5\aracKiralamaApp\obj\Debug\net9.0\ref\aracKiralamaApp.dll
